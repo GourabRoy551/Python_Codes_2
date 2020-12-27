@@ -1,6 +1,7 @@
 import numpy as np
 import seaborn as sns
 import pandas as pd
+import matplotlib.pyplot as plt
 
 df1 = sns.load_dataset('tips')
 df2 = pd.read_csv('ece.csv')
@@ -13,3 +14,7 @@ df4 = pd.DataFrame(x2, columns=['a', 'b', 'c', 'd', 'e'])
 
 print(df3)
 print(df4)
+
+df3.plot.scatter(x='a', y='b')
+df4.plot.line()
+plt.show()
