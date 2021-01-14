@@ -15,5 +15,3 @@ def insert(roll,nam,mark):
     conn.close()
 
 insert(4, 'pugghero', 100)
-
-
